@@ -3,7 +3,7 @@
 # Each entry: name (required), file (path under /), tag (right-hand label),
 # year (optional, shown after the name).
 - name: Curriculum Vitae
-  file: /assets/docs/isaiah-buchberger-cv.pdf
+  file: /assets/docs/CV_Buchberger_Isaiah.docx
   tag: CV · PDF
 # - name: "Paper title goes here"
 #   file: /assets/docs/paper-slug.pdf
