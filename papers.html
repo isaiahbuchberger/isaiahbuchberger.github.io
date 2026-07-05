@@ -1,0 +1,29 @@
+---
+layout: default
+title: Papers
+permalink: /papers/
+---
+<main class="page">
+
+  <section class="section first">
+    <h1 class="mega">Papers<span class="cursor" aria-hidden="true"></span></h1>
+  </section>
+
+  <div class="section">
+    <span class="mono page-kicker">CV &amp; research papers — click to download</span>
+  </div>
+
+  <ul class="linelist">
+    {% for doc in site.data.documents %}
+    {% assign num = forloop.index | prepend: '000' | slice: -3, 3 %}
+    <li>
+      <a class="line" href="{{ doc.file | relative_url }}" download>
+        <span>{{ num }}</span>
+        <span class="name">{{ doc.name }}{% if doc.year %} ({{ doc.year }}){% endif %}</span>
+        <span class="tag">{{ doc.tag }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+
+</main>

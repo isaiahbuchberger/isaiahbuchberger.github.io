@@ -1,0 +1,19 @@
+# Entries for the numbered index list on the homepage.
+# Each entry: name (required), tag (right-hand label), href (optional link).
+- name: Contingency and the Good
+  tag: Research
+- name: Unsettling Political Community
+  tag: Research
+- name: On Value
+  tag: In progress
+- name: M.A., Social Science — University of Chicago
+  tag: Graduate
+- name: B.A., Anthropology with Honors — University of Chicago
+  tag: Undergraduate
+- name: Mellon Mays Undergraduate Fellowship
+  tag: Fellowship
+- name: Regional & national conference presentations
+  tag: Ongoing
+- name: isaiahbuchberger@gmail.com
+  tag: Contact
+  href: mailto:isaiahbuchberger@gmail.com

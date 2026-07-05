@@ -1,0 +1,71 @@
+<div class="ascii" aria-hidden="true">
+  <pre id="ascii"></pre>
+</div>
+
+<main id="top">
+
+  <section class="section first">
+    <h1 class="mega">Researcher of culture, politics, and political economy — examining collective political projects, contingency, and the plural notions of the good that hold, and unsettle, political communities.<span class="cursor" aria-hidden="true"></span></h1>
+  </section>
+
+  <section class="section props hr" id="research">
+    <div class="cell">
+      <h3>Contingency and the good</h3>
+      <p>An inquiry into how collective political projects are held together — and pulled apart — by contingency, and by the plural, often incommensurable notions of the good that animate them.</p>
+    </div>
+    <div class="cell">
+      <h3>Unsettling political community</h3>
+      <p>A comparative reading of involuntary celibates (incels) and contemporary Left organizations as case studies for breaking down conventional models of political community and belonging.</p>
+    </div>
+  </section>
+
+  <section class="section space" id="about">
+    <p class="mega second">Isaiah is a graduate of the University of Chicago, where he received a B.A. in Anthropology with Honors and a Master's degree in Social Science.</p>
+  </section>
+
+  <section class="section props hr">
+    <div class="cell">
+      <h3>On value</h3>
+      <p>A long-term project, currently beginning, that addresses debates on value across symbolic anthropology, critical macro-finance, and cybernetics.</p>
+    </div>
+    <div class="cell">
+      <h3>Presented widely</h3>
+      <p>His work has been presented at multiple regional and national research conferences, and was supported by the Mellon Mays Undergraduate Fellowship.</p>
+    </div>
+  </section>
+
+  <section class="section facts space hr">
+    <div class="cell">
+      <strong>Field</strong>
+      <span>Anthropology &amp; Social Science</span>
+    </div>
+    <div class="cell">
+      <strong>Institution</strong>
+      <span>University of Chicago</span>
+    </div>
+    <div class="cell">
+      <strong>Degrees</strong>
+      <span>B.A. with Honors, M.A.</span>
+    </div>
+    <div class="cell">
+      <strong>Recognition</strong>
+      <span>Mellon Mays Fellowship</span>
+    </div>
+  </section>
+
+</main>
+
+<section id="index">
+  <ul class="linelist">
+    {% for item in site.data.index %}
+    {% assign num = forloop.index | prepend: '000' | slice: -3, 3 %}
+    <li>
+      {% if item.href %}
+      <a class="line" href="{{ item.href }}"><span>{{ num }}</span><span class="name">{{ item.name }}</span><span class="tag">{{ item.tag }}</span></a>
+      {% else %}
+      <div class="line"><span>{{ num }}</span><span class="name">{{ item.name }}</span><span class="tag">{{ item.tag }}</span></div>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>

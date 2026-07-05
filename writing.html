@@ -1,0 +1,35 @@
+---
+layout: default
+title: Writing
+permalink: /writing/
+---
+<main class="page">
+
+  <section class="section first">
+    <h1 class="mega">Writing<span class="cursor" aria-hidden="true"></span></h1>
+  </section>
+
+  <div class="section">
+    <span class="mono page-kicker">Notes, essays &amp; work in progress</span>
+  </div>
+
+  {% if site.posts.size > 0 %}
+  <ul class="linelist">
+    {% for post in site.posts %}
+    {% assign num = forloop.index | prepend: '000' | slice: -3, 3 %}
+    <li>
+      <a class="line" href="{{ post.url | relative_url }}">
+        <span>{{ num }}</span>
+        <span class="name">{{ post.title }}</span>
+        <span class="tag">{{ post.date | date: "%b %Y" }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <div class="section">
+    <p class="mono page-kicker">Nothing here yet — first entries coming soon.</p>
+  </div>
+  {% endif %}
+
+</main>

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<main class="page">
+
+  <section class="section first">
+    <div class="post-meta mono">
+      <a href="{{ '/writing/' | relative_url }}">&larr; Writing</a>
+      <span>{{ page.date | date: "%B %-d, %Y" }}{% if page.category %} &middot; {{ page.category }}{% endif %}</span>
+    </div>
+    <h1 class="mega post-title">{{ page.title }}</h1>
+  </section>
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+</main>

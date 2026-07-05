@@ -1,0 +1,28 @@
+title: Isaiah Buchberger
+tagline: Researcher of Culture, Politics, and Political Economy
+description: >-
+  Isaiah Buchberger is a researcher of culture, politics, and political
+  economy, examining collective political projects, contingency, and the
+  plural notions of the good that hold, and unsettle, political communities.
+email: isaiahbuchberger@gmail.com
+
+# Set these when publishing:
+#   url:     your site's base URL, e.g. https://yourusername.github.io
+#   baseurl: "" for a user site (username.github.io repo),
+#            "/repo-name" for a project site
+url: ""
+baseurl: ""
+
+permalink: /writing/:title/
+markdown: kramdown
+timezone: America/Chicago
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .claude

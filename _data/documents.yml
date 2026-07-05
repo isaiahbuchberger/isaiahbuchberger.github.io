@@ -1,0 +1,11 @@
+# Downloadable documents listed on /papers/.
+# Drop the PDF into assets/docs/ and add an entry here.
+# Each entry: name (required), file (path under /), tag (right-hand label),
+# year (optional, shown after the name).
+- name: Curriculum Vitae
+  file: /assets/docs/isaiah-buchberger-cv.pdf
+  tag: CV · PDF
+# - name: "Paper title goes here"
+#   file: /assets/docs/paper-slug.pdf
+#   tag: Paper · PDF
+#   year: 2026
