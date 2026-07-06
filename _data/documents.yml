@@ -4,7 +4,7 @@
 # year (optional, shown after the name).
 - name: Curriculum Vitae
   file: /assets/docs/CV_Buchberger_Isaiah.docx
-  tag: CV · PDF
+  tag: CV · DOCX
 # - name: "Paper title goes here"
 #   file: /assets/docs/paper-slug.pdf
 #   tag: Paper · PDF
