@@ -39,8 +39,9 @@ to `_data/documents.yml`. It appears at `/papers/` as a download link.
 
 **Edit the homepage index** — edit `_data/index.yml`. Numbering is automatic.
 
-**Light version** — `/light.html` is the same homepage forced to light mode.
-It shares `_includes/home.html` with `/`, so they can't drift apart.
+**Dark version** — `/dark.html` is the same homepage forced to dark mode
+(the main site is light). It shares `_includes/home.html` with `/`, so they
+can't drift apart.
 
 ## Run locally
 

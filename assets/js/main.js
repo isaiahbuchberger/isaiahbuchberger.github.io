@@ -62,7 +62,7 @@ var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     var fs = Math.min(H * .3, W / 7.5);
-    ctx.font = '700 ' + fs + 'px Helvetica, Arial, sans-serif';
+    ctx.font = '700 ' + fs + 'px Georgia, "Times New Roman", serif';
     ctx.fillText('ISAIAH', W / 2, H * .34);
     ctx.fillText('BUCHBERGER', W / 2, H * .66);
     var d = ctx.getImageData(0, 0, W, H).data;
