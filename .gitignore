@@ -6,3 +6,9 @@ vendor/
 .bundle/
 .DS_Store
 .claude/
+.agents/
+skills-lock.json
+.impeccable/
+assets/docs/*.docx
+PRODUCT.md
+DESIGN.md

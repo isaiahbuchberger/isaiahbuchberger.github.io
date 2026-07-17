@@ -1,19 +1,22 @@
 # Entries for the numbered index list on the homepage.
 # Each entry: name (required), tag (right-hand label), href (optional link).
-- name: Contingency and the Good
+# Rows without an href render as plain entries (no hover/click affordance).
+- name: A Change of Heart — contingency and the good
   tag: Research
 - name: Unsettling Political Community
   tag: Research
-- name: On Value
-  tag: In progress
-- name: M.A., Social Science — University of Chicago
-  tag: Graduate
-- name: B.A., Anthropology with Honors — University of Chicago
-  tag: Undergraduate
-- name: Mellon Mays Undergraduate Fellowship
-  tag: Fellowship
-- name: Regional & national conference presentations
-  tag: Ongoing
+- name: Notes toward a project on value
+  tag: Writing
+  href: /writing/notes-toward-a-project-on-value/
+- name: All writing — essays & notes
+  tag: Writing
+  href: /writing/
+- name: Curriculum Vitae
+  tag: CV · PDF
+  href: /assets/docs/CV_Buchberger_Isaiah.pdf
+- name: Papers & documents
+  tag: Papers
+  href: /papers/
 - name: isaiahbuchberger@gmail.com
   tag: Contact
   href: mailto:isaiahbuchberger@gmail.com

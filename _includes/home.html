@@ -1,20 +1,27 @@
-<div class="ascii" aria-hidden="true">
-  <pre id="ascii"></pre>
-</div>
+<noscript><style>.shelf, .study-hint, .study-cue{ display:none; } .study{ height:auto; min-height:0; }</style></noscript>
+<header class="study">
+  <h1 class="mega study-title">Politics is made, not given.<span class="cursor" aria-hidden="true"></span></h1>
+  <div class="shelf" aria-hidden="true">
+    <canvas id="shelf-canvas"></canvas>
+    <div class="shelf-tip mono" hidden></div>
+  </div>
+  <p class="study-hint mono">Green marks the doors — books, papers, screen, chair.</p>
+  <a class="study-cue mono" href="#intro">Scroll</a>
+</header>
 
 <main id="top">
 
-  <section class="section first">
-    <h1 class="mega">Researcher of culture, politics, and political economy — examining collective political projects, contingency, and the plural notions of the good that hold, and unsettle, political communities.<span class="cursor" aria-hidden="true"></span></h1>
+  <section class="section space" id="intro">
+    <p class="mega second">Isaiah Buchberger researches culture, politics, and political economy — how collective political projects are held together, and come apart, through contingency and competing notions of the good.</p>
   </section>
 
   <section class="section props hr" id="research">
     <div class="cell">
-      <h3>A Change of Heart</h3>
+      <h2>A Change of Heart</h2>
       <p>An inquiry into how collective political projects are held together — and pulled apart — by contingency, and by the plural, often incommensurable notions of the good that animate them.</p>
     </div>
     <div class="cell">
-      <h3>Unsettling political community</h3>
+      <h2>Unsettling political community</h2>
       <p>A comparative reading of involuntary celibates (incels) and contemporary Left organizations as case studies for breaking down conventional models of political community and belonging.</p>
     </div>
   </section>
@@ -25,11 +32,11 @@
 
   <section class="section props hr">
     <div class="cell">
-      <h3>On value</h3>
+      <h2>On value</h2>
       <p>A long-term project, currently beginning, that addresses debates on value across symbolic anthropology, critical macro-finance, and cybernetics.</p>
     </div>
     <div class="cell">
-      <h3>Presented widely</h3>
+      <h2>Presented widely</h2>
       <p>His work has been presented at multiple regional and national research conferences, and was supported by the Mellon Mays Undergraduate Fellowship.</p>
     </div>
   </section>
@@ -56,6 +63,7 @@
 </main>
 
 <section id="index">
+  <h2 class="mono index-kicker">Index</h2>
   <ul class="linelist">
     {% for item in site.data.index %}
     {% assign num = forloop.index | prepend: '000' | slice: -3, 3 %}
@@ -69,3 +77,11 @@
     {% endfor %}
   </ul>
 </section>
+
+<script>
+window.SHELF_BOOKS = [
+  {% for item in site.data.index %}{ "name": {{ item.name | jsonify }}, "tag": {{ item.tag | jsonify }}, "href": {{ item.href | jsonify }} }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+];
+</script>
+<script src="{{ '/assets/js/bookshelf.js' | relative_url }}"></script>

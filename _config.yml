@@ -6,11 +6,7 @@ description: >-
   plural notions of the good that hold, and unsettle, political communities.
 email: isaiahbuchberger@gmail.com
 
-# Set these when publishing:
-#   url:     your site's base URL, e.g. https://yourusername.github.io
-#   baseurl: "" for a user site (username.github.io repo),
-#            "/repo-name" for a project site
-url: ""
+url: "https://isaiahbuchberger.github.io"
 baseurl: ""
 
 permalink: /writing/:title/
